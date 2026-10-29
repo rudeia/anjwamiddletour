@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="380" y1="0" x2="380" y2="340" gradientUnits="userSpaceOnUse"><stop stop-color="#eaf2ed"/><stop offset="1" stop-color="#c8e0de"/></linearGradient>
+    <linearGradient id="sea" x1="390" y1="235" x2="390" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#87bcc2"/><stop offset=".53" stop-color="#559aaa"/><stop offset="1" stop-color="#2c7089"/></linearGradient>
+    <linearGradient id="island" x1="530" y1="195" x2="540" y2="310" gradientUnits="userSpaceOnUse"><stop stop-color="#759c8b"/><stop offset="1" stop-color="#487e73"/></linearGradient>
+    <linearGradient id="sunPath" x1="546" y1="250" x2="546" y2="405" gradientUnits="userSpaceOnUse"><stop stop-color="#f7dfaf" stop-opacity=".55"/><stop offset="1" stop-color="#f7dfaf" stop-opacity="0"/></linearGradient>
+    <pattern id="paper" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".45" fill="#315d69" opacity=".09"/><circle cx="4" cy="4" r=".3" fill="#fff" opacity=".3"/></pattern>
+  </defs>
+  <rect width="760" height="500" fill="url(#sky)"/>
+  <!-- A quiet coastal sky -->
+  <circle cx="535" cy="107" r="58" fill="#efd4a0" opacity=".17"/>
+  <circle cx="535" cy="107" r="44" fill="#efc784"/>
+  <path d="M119 104C138 88 157 92 169 104C187 93 205 97 213 110H111" fill="#f9faf2" opacity=".62"/>
+  <path d="M337 67C348 56 365 56 375 67C388 60 401 64 408 72H329" fill="#f9faf2" opacity=".55"/>
+  <g stroke="#6a919b" stroke-width="2.2" stroke-linecap="round"><path d="M348 124q9-10 18 0q9-10 18 0"/><path d="M419 157q6-7 12 0q6-7 12 0"/><path d="M300 92q5-5 10 0q5-5 10 0"/></g>
+  <!-- Islands fade into the horizon -->
+  <path d="M0 254Q56 206 112 225Q164 171 230 211Q278 165 341 219Q381 202 430 236L760 258V325H0Z" fill="#b2cbc0"/>
+  <path d="M0 276Q60 231 116 253Q176 201 225 248Q268 224 313 258L364 283H0Z" fill="#91b4a4"/>
+  <path d="M480 253Q531 208 579 224Q621 183 659 219Q717 198 760 237V298H480Z" fill="#95b5a6"/>
+  <path d="M0 280Q181 267 362 281T760 275V500H0Z" fill="url(#sea)"/>
+  <path d="M494 283h82l-9 8h-68Zm-14 18h109l-11 8h-89Zm-10 22h133l-14 9H480Zm-14 27h165l-16 9H470Zm-9 30h183l-11 9H460Z" fill="url(#sunPath)"/>
+  <path d="M0 349Q144 322 294 352T579 348T760 349V500H0Z" fill="#4f94a7" opacity=".32"/>
+  <path d="M0 419Q141 374 307 416T608 411T760 409V500H0Z" fill="#2f7892" opacity=".36"/>
+  <!-- Cable-stayed bridge: deck, shadows, towers and cables -->
+  <path d="M48 298L449 287L449 299L48 309Z" fill="#426d76" opacity=".24"/>
+  <path d="M46 286L445 277L445 288L46 297Z" fill="#ece7ce"/>
+  <path d="M46 285L445 276" stroke="#fffaf0" stroke-width="3"/>
+  <path d="M96 297L96 316M383 290L383 306" stroke="#739b9c" stroke-width="9"/>
+  <path d="M173 140L164 294M302 167L297 291" stroke="#f9f3dd" stroke-width="8"/>
+  <path d="M178 141L169 293M307 168L302 290" stroke="#b8c7bb" stroke-width="2"/>
+  <g stroke="#fff8e5" stroke-width="1.9" opacity=".96"><path d="M172 171L65 285M171 188L99 285M170 209L127 284M172 171L291 280M171 188L259 280M170 209L226 281M302 194L205 282M302 210L239 281M301 228L270 280M302 194L428 277M302 210L394 278M301 228L359 279"/></g>
+  <path d="M181 299L175 334M308 295L305 320" stroke="#c0ddd5" stroke-width="3" opacity=".32"/>
+  <!-- Lighthouse headland and a little walking trail -->
+  <path d="M547 283Q557 257 590 252Q610 227 642 245Q682 246 705 275L760 284V314Q703 304 667 311Q617 305 578 297Z" fill="url(#island)"/>
+  <path d="M570 285Q616 272 649 283T736 292" stroke="#cfceaf" stroke-width="5" stroke-linecap="round"/>
+  <path d="M582 297L611 300L623 308L603 308Z" fill="#6a8e7c"/><path d="M682 301L703 299L719 307L694 310Z" fill="#547f72"/>
+  <g transform="translate(621 171)"><path d="M-14 79L-9 16H14L20 79Z" fill="#fff8e6"/><path d="M-10 34H15L13 17H-9Z" fill="#cf8a73"/><path d="M-16 17L3 0L23 17Z" fill="#315c6d"/><path d="M-6 7H12V17H-6Z" fill="#f4db9c"/><path d="M-6 7H12V17H-6Z" stroke="#315c6d" stroke-width="2"/><path d="M0 47H8V60H0Z" fill="#5c8593"/><path d="M-1 78V68Q4 63 9 68V78" fill="#5a7f85"/><path d="M-16 79H22" stroke="#dfd9be" stroke-width="4"/></g>
+  <g fill="#3d7067"><path d="M578 258l10-24 10 24Z"/><path d="M590 254l9-28 10 28Z"/><path d="M670 261l9-26 10 26Z"/></g>
+  <!-- A cable car above the coast -->
+  <path d="M465 203Q577 163 742 164" stroke="#739590" stroke-width="1.3"/>
+  <g transform="translate(518 189)"><path d="M0 0V10" stroke="#527783" stroke-width="2"/><rect x="-9" y="9" width="19" height="15" rx="4" fill="#cb8b70"/><path d="M-6 12H7V19H-6Z" fill="#dce9df"/><path d="M0 12V19" stroke="#ba826c"/></g>
+  <g transform="translate(699 165)"><path d="M0 0V9" stroke="#527783" stroke-width="2"/><rect x="-8" y="8" width="17" height="14" rx="4" fill="#f0d49e"/><path d="M-5 11H6V17H-5Z" fill="#6c9ca5"/></g>
+  <!-- A ferry and its wake -->
+  <g><path d="M369 365Q392 353 424 364" stroke="#c2e1db" stroke-width="2" stroke-linecap="round" opacity=".6"/><path d="M403 345L459 343L450 359H414Z" fill="#f9f4df"/><path d="M414 331H444L449 345H410Z" fill="#fffaf0"/><path d="M414 331H445" stroke="#c77e68" stroke-width="3"/><path d="M419 334H426V340H417ZM431 334H439L442 340H431Z" fill="#47798a"/><path d="M424 330V320" stroke="#537f8b" stroke-width="2"/><path d="M405 350L455 348" stroke="#cf8b72" stroke-width="2"/></g>
+  <!-- Water glints -->
+  <g stroke="#d5eae2" stroke-linecap="round"><path d="M75 334q31-7 58-2M249 320h29M479 411q40-9 77-1M563 347h20M198 398q22-5 44-1M659 384q24-7 49-3M329 452q33-8 65-2" stroke-width="2" opacity=".7"/><path d="M146 359h15M281 371h22M607 438h18M478 324h15M85 413h17" stroke-width="1.4" opacity=".45"/></g>
+  <!-- Foreground coast: a path inviting students to explore -->
+  <path d="M0 390Q50 359 92 392Q118 405 138 434Q166 461 225 500H0Z" fill="#6e9682"/>
+  <path d="M0 427Q47 388 82 418Q121 446 161 500" stroke="#e9dfbf" stroke-width="17"/>
+  <path d="M0 428Q47 390 82 419Q121 447 161 500" stroke="#f4ebd4" stroke-width="10"/>
+  <g stroke="#4e7869" stroke-width="4"><path d="M35 396v-39M96 442v-39M20 468v-41"/></g>
+  <g fill="#416f61"><path d="M17 378l18-48 19 48Z"/><path d="M76 421l20-52 21 52Z"/><path d="M0 446l20-53 21 53Z"/></g>
+  <g fill="#adba90"><ellipse cx="129" cy="476" rx="16" ry="8"/><ellipse cx="14" cy="491" rx="29" ry="10"/></g>
+  <rect width="760" height="500" fill="url(#paper)" opacity=".5"/>
+</svg>

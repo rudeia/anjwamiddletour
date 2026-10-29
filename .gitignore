@@ -1,0 +1,10 @@
+.DS_Store
+.env
+.env.*
+*.pdf
+*검증*
+*QA*
+*backup*
+node_modules/
+.tmp/
+tmp/

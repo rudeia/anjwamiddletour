@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "순천만 체험활동 미션활동지",
+  "short_name": "순천만 미션활동",
+  "description": "순천만에서 보고 듣고 느낀 순간을 기록하는 체험활동 미션활동지",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f6f0",
+  "theme_color": "#245b70",
+  "icons": [
+    {"src": "assets/app-icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "assets/app-icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any"},
+    {"src": "assets/app-icon-maskable.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

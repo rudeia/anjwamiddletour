@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 500" fill="none">
+<defs><linearGradient id="sky" x1="380" y1="0" x2="380" y2="320" gradientUnits="userSpaceOnUse"><stop stop-color="#edf2e4"/><stop offset="1" stop-color="#dce6ce"/></linearGradient><linearGradient id="reed" x1="0" y1="230" x2="0" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#c4c387"/><stop offset="1" stop-color="#a29b5f"/></linearGradient><linearGradient id="water" x1="500" y1="220" x2="370" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#a2c3b7"/><stop offset="1" stop-color="#558e8f"/></linearGradient><pattern id="grain" width="7" height="7" patternUnits="userSpaceOnUse"><circle cx="1" cy="2" r=".4" fill="#4c684f" opacity=".12"/><circle cx="4" cy="5" r=".4" fill="#fff" opacity=".35"/></pattern></defs>
+<rect width="760" height="500" fill="url(#sky)"/><circle cx="544" cy="100" r="54" fill="#efd59c" opacity=".2"/><circle cx="544" cy="100" r="38" fill="#e8c68a"/>
+<path d="M94 101q18-18 36-2q18-10 36 6H88M314 69q14-15 31-3q17-8 29 5h-65" fill="#faf9e8" opacity=".65"/>
+<path d="M0 236Q56 211 94 227Q158 164 209 218Q263 185 308 227Q357 193 406 227Q466 182 525 225Q598 171 662 220Q713 199 760 230V288H0Z" fill="#b2c4a4"/>
+<path d="M0 252Q72 211 130 244Q179 219 231 247Q307 221 360 256Q410 236 469 255L760 250V325H0Z" fill="#8fa990"/>
+<path d="M0 269Q171 256 332 272T760 267V500H0Z" fill="url(#reed)"/>
+<path d="M534 267C450 277 400 282 412 299C424 319 569 308 561 340C553 375 365 363 346 402C331 434 449 447 414 500H182C241 440 269 426 268 400C266 354 463 361 473 338C483 316 357 330 361 299C365 279 438 271 466 267Z" fill="url(#water)"/>
+<path d="M534 267C450 277 400 282 412 299C424 319 569 308 561 340C553 375 365 363 346 402C331 434 449 447 414 500" stroke="#e1e5bd" stroke-width="4"/>
+<path d="M62 295q90-15 153-1M601 295q64-14 159-2M53 354q64-20 129-1M585 387q82-29 175-10M467 456q123-31 293-14" stroke="#dad29a" stroke-width="12" opacity=".42"/>
+<g stroke="#a39f61" stroke-width="2" stroke-linecap="round" opacity=".75"><path d="M77 310l-2-12m9 9 2-15m74 18-2-12m58 18 2-12m402-8 1-13m33 18 1-11m55 12-2-13M74 378l2-12m37 8-1-10m79 37 2-16m390 14 2-15m39 3-1-12m40 14 3-15m58 10-2-15M90 440l2-15m74 9-2-13m408 47 2-16m60 7-1-12m77 19 1-18"/></g>
+<!-- A timber boardwalk enters the marsh. -->
+<path d="M0 443L219 334L339 319L346 333L229 348L21 463Z" fill="#6c795e" opacity=".2"/>
+<path d="M0 422L218 316L340 306L344 320L224 332L0 446Z" fill="#ddd2a8"/>
+<path d="M0 426L221 321L342 311" stroke="#f0e7c8" stroke-width="3"/>
+<g stroke="#b6a97c" stroke-width="1.4"><path d="M25 411l17 15M53 397l17 15M81 383l18 15M110 369l18 15M138 355l19 15M167 341l19 15M195 327l19 15M235 315l2 16M259 313l2 15M283 311l2 16M307 309l2 16"/></g>
+<path d="M0 407L217 302L338 293M0 435L223 330L344 319" stroke="#827c57" stroke-width="3"/>
+<g stroke="#827c57" stroke-width="4"><path d="M30 394v25M76 371v26M122 349v27M168 327v27M214 305v27M258 299v26M302 296v25M338 293v27M33 420v27M80 397v28M128 374v27M175 351v28M223 330v28M264 326v25M305 323v22M344 319v25"/></g>
+<!-- A small bird hide on the marsh edge. -->
+<g transform="translate(611 226)"><path d="M-26 10H32V48H-26Z" fill="#c9b887"/><path d="M-35 11L2-14L41 11Z" fill="#6e7f63"/><path d="M-15 21H19V31H-15Z" fill="#647f6b"/><path d="M-19 48V66M25 48V63" stroke="#8c855d" stroke-width="4"/><path d="M-30 49H37" stroke="#e0d3ab" stroke-width="4"/></g>
+<!-- Winter visitors: quiet cranes above and beside the water. -->
+<g stroke="#647b73" stroke-width="2.3" stroke-linecap="round"><path d="M297 117q12-13 24 0q12-13 24 0M385 149q9-9 18 0q9-9 18 0M350 95q6-7 12 0q6-7 12 0"/></g>
+<g transform="translate(496 380)"><ellipse cx="0" cy="0" rx="13" ry="7" fill="#f8f5df"/><path d="M9-3Q22-4 19-20Q18-26 22-29" stroke="#f8f5df" stroke-width="6"/><path d="M22-29h10" stroke="#716f52" stroke-width="2"/><path d="M0 5v24M7 5l4 23" stroke="#706d51" stroke-width="2"/><path d="M-9 0l8 4" stroke="#596f62" stroke-width="3"/><circle cx="23" cy="-30" r="2" fill="#bd8b6b"/></g>
+<g transform="translate(558 405) scale(.8)"><ellipse cx="0" cy="0" rx="13" ry="7" fill="#f8f5df"/><path d="M9-3Q22-4 19-20Q18-26 22-29" stroke="#f8f5df" stroke-width="6"/><path d="M22-29h10" stroke="#716f52" stroke-width="2"/><path d="M0 5v24M7 5l4 23" stroke="#706d51" stroke-width="2"/></g>
+<g stroke="#c5dcd0" stroke-width="2" stroke-linecap="round" opacity=".7"><path d="M413 344h35M318 407h21M337 463h36M461 294h28"/></g>
+<!-- Close-up reeds frame the foreground. -->
+<g stroke="#8b8851" stroke-width="3" stroke-linecap="round"><path d="M34 500L45 377M62 500L83 397M90 500L102 365M119 500L130 411M657 500L648 411M689 500L700 374M728 500L722 395"/></g>
+<g fill="#c9ae71"><ellipse cx="45" cy="379" rx="5" ry="24" transform="rotate(8 45 379)"/><ellipse cx="83" cy="400" rx="5" ry="23" transform="rotate(12 83 400)"/><ellipse cx="102" cy="371" rx="6" ry="27" transform="rotate(7 102 371)"/><ellipse cx="130" cy="413" rx="5" ry="22"/><ellipse cx="648" cy="412" rx="5" ry="23" transform="rotate(-6 648 412)"/><ellipse cx="700" cy="380" rx="6" ry="25"/><ellipse cx="722" cy="399" rx="5" ry="24"/></g>
+<g stroke="#92965a" stroke-width="2"><path d="M42 440q-17-8-23-23M79 450q16-9 22-25M100 428q-14-10-18-25M697 439q-14-8-19-23M723 463q17-11 22-29"/></g>
+<rect width="760" height="500" fill="url(#grain)" opacity=".55"/>
+</svg>
