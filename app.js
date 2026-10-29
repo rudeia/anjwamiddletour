@@ -3,7 +3,7 @@ const $ = s => document.querySelector(s);
 const esc = v => String(v ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const clone = v => JSON.parse(JSON.stringify(v));
 const APP_TITLE = '순천만 체험활동 미션활동지';
-const STORE = 'sagye-fieldnotes-v1';
+const STORE = 'sagye-fieldnotes-v1' + (new URLSearchParams(location.search).get('qa') === '1' ? '-qa' : '');
 const PRE = ['이번 체험학습에서 가장 기대하는 점은 무엇인가요?', '새롭게 알고 싶은 것은 무엇인가요?', '직접 보고, 듣고, 느껴 보고 싶은 것은 무엇인가요?'];
 const POST = ['가장 인상 깊었던 장면이나 활동은 무엇인가요?', '새롭게 알게 된 사실이나 중요하다고 느낀 내용은 무엇인가요?', '현장을 직접 경험하며 느낀 점은 무엇인가요?', '더 관심을 갖게 된 분야나 직업은 무엇인가요?', '친구나 가족에게 꼭 알려 주고 싶은 것은 무엇인가요?', '앞으로 실천하고 싶은 행동이나 태도는 무엇인가요?'];
 const templates = [
