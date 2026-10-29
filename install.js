@@ -8,9 +8,15 @@
   const standalone = matchMedia('(display-mode: standalone)');
   let installPrompt = null;
   const isInstalled = () => standalone.matches || navigator.standalone === true;
+  function renderButton(installed){
+    const label=installed?'설치 안내':'앱 설치';
+    button.innerHTML='<span class="action-icon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-4M10 3h6M13 1v10m-4-4 4 4 4-4M8 17h4"/></svg></span><span class="action-label">'+label+'</span>';
+    button.setAttribute('aria-label',installed?'설치 안내 (홈 화면에서 실행 중)':'앱 설치 안내');
+    button.title=installed?'설치 안내':'앱 설치 안내';
+  }
   function update() {
     const installed = isInstalled();
-    button.innerHTML = installed ? '<span aria-hidden="true">✓</span> 설치 안내' : '<span aria-hidden="true">↓</span> 앱 설치';
+    renderButton(installed);
     nativeWrap.hidden = installed || !installPrompt;
     if (installed) {
       status.textContent = '홈 화면에서 실행 중이에요. 다음에도 이 아이콘으로 활동을 이어가세요.';
@@ -50,8 +56,8 @@
     installPrompt = null;
     nativeWrap.hidden = true;
     status.hidden = false;
-    status.textContent = '설치가 완료되었어요. 홈 화면에서 순천만 미션활동을 찾아보세요.';
-    button.innerHTML = '<span aria-hidden="true">✓</span> 설치 안내';
+    status.textContent = '설치가 완료되었어요. 홈 화면에서 체험 한 장을 찾아보세요.';
+    renderButton(true);
   });
   button.addEventListener('click', async () => {
     // prompt() must run directly from the user's click when the browser offers it.

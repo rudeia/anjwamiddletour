@@ -16,3 +16,25 @@ body{background-color:var(--paper);background-image:radial-gradient(#776c4e0a .7
 .theme-title-panel{min-width:0}.theme-title-panel small{display:block;white-space:normal;overflow-wrap:anywhere}
 
 .selected-element-remove{display:block;width:100%;min-height:44px;font-size:16px;margin:16px 0 8px}.note-settings>summary{min-height:44px;font-size:16px;line-height:1.7;padding:10px 0;cursor:pointer}.note-settings:not([open]) .selected-note-tools{display:none}
+
+/* Native date inputs must shrink to their grid cell on iOS as well. */
+.festival-fields>label,.fields>label{min-width:0;max-width:100%}
+input[type=date]{display:block;width:100%;min-width:0;max-width:100%;inline-size:100%;min-inline-size:0;max-inline-size:100%;box-sizing:border-box;-webkit-appearance:none;appearance:none;text-align:left}
+input[type=date]::-webkit-date-and-time-value{min-width:0;text-align:left}
+input[type=date]::-webkit-datetime-edit{min-width:0;padding:0;max-width:100%}
+.action-icon{display:inline-flex;align-items:center;justify-content:center;flex:none}.action-icon svg{display:block;width:22px;height:22px}.action-label{margin-left:6px}
+.titlebar .top-actions>button{display:inline-flex;align-items:center;justify-content:center}
+@media(max-width:600px){
+ .titlebar,.home-screen .titlebar,.activity-hub .titlebar{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:8px;padding:12px;padding-top:max(12px,env(safe-area-inset-top));text-align:left;flex-wrap:nowrap}
+ .titlebar .title-block{display:block;min-width:0;order:initial}
+ .titlebar .title-block>.eyebrow{display:none}
+ .titlebar .title-block>.trip-title{font-size:clamp(20px,6vw,24px)!important;line-height:1.35;white-space:nowrap;text-align:left;letter-spacing:-1px;margin:0;order:initial}
+ .titlebar>.top-actions{display:flex!important;order:initial;width:auto!important;max-width:none;gap:4px;flex-wrap:nowrap;justify-content:flex-end}
+ .titlebar .top-actions>button{flex:none;width:44px;height:44px;min-width:44px;min-height:44px;padding:0;font-size:20px!important;line-height:1}
+ .titlebar .action-label{display:none}.titlebar #save-state{display:none}
+ .activity-home-intro{width:100%;min-width:0;text-align:left}.activity-home-intro h2{font-size:clamp(27px,7.7vw,31px);line-height:1.5;letter-spacing:-1px;text-wrap:initial;word-break:keep-all;overflow-wrap:break-word}
+ .activity-home-intro>.eyebrow{font-size:9px;letter-spacing:.7px;overflow-wrap:anywhere}
+ .page-heading{min-width:0}.page-heading>div{min-width:0;width:100%}.page-heading h1{font-size:clamp(25px,7vw,29px);line-height:1.5;word-break:keep-all;overflow-wrap:break-word;text-wrap:initial;letter-spacing:-1px}.page-heading p{font-size:16px;line-height:1.8}
+ .festival-fields input{min-width:0;max-width:100%}.festival-fields input[type=date]{padding:10px 12px;min-height:48px;font-size:16px}
+}
+@media(max-width:600px){.titlebar,.home-screen .titlebar,.activity-hub .titlebar{width:100%;max-width:none;margin-left:0;margin-right:0;align-self:stretch}}
