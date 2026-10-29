@@ -38,3 +38,12 @@ input[type=date]::-webkit-datetime-edit{min-width:0;padding:0;max-width:100%}
  .festival-fields input{min-width:0;max-width:100%}.festival-fields input[type=date]{padding:10px 12px;min-height:48px;font-size:16px}
 }
 @media(max-width:600px){.titlebar,.home-screen .titlebar,.activity-hub .titlebar{width:100%;max-width:none;margin-left:0;margin-right:0;align-self:stretch}}
+
+.expectations-page .question:last-child{margin-bottom:0}.expectations-page .question>label{display:block}.expectations-page textarea{width:100%;min-height:140px}
+@media(max-width:600px){
+ body:not(.activity-hub) main{margin-top:24px}
+ #steps{gap:4px;padding:8px 0}#steps button{min-width:0;min-height:64px;padding:8px 3px;font-size:14px;line-height:1.45;text-align:center;word-break:keep-all}#steps .num{display:block;margin:0 0 3px;font-size:11px;line-height:1.2}
+ .page-heading{gap:12px;margin-bottom:22px;align-items:flex-start}.page-heading h1{font-family:'Noto Sans KR',sans-serif;font-weight:700;font-size:clamp(24px,6.6vw,27px);line-height:1.4;letter-spacing:-.7px;margin:0 0 10px;word-break:keep-all;overflow-wrap:break-word}.page-heading .eyebrow{font-size:12px;line-height:1.5;letter-spacing:.6px;margin-bottom:8px}.page-heading p{font-size:16px;line-height:1.65;margin:0}
+ .festival-progress{margin-bottom:20px;gap:10px;align-items:center}.festival-progress>span{font-size:16px;line-height:1.5;white-space:nowrap}.festival-progress progress{height:8px;min-width:100px}
+ .expectations-page{padding:22px 18px}.expectations-page .question{margin-bottom:24px}.expectations-page label{font-size:16px;line-height:1.8}.expectations-page textarea{font-size:16px;line-height:1.8;min-height:150px}
+}
