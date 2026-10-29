@@ -16,3 +16,6 @@
 - html2canvas 1.4.1: MIT, vendor/html2canvas-LICENSE.txt
 - NanumGothic-Regular.ttf: SIL Open Font License 1.1, vendor/NanumGothic-OFL.txt
 - 화면용 Google Fonts는 외부 연결을 사용하며 실패하면 기기 기본 글꼴로 대체됩니다.
+
+## 개구(Gaegu) 글꼴
+포스트잇 손글씨에 Gaegu Regular를 사용합니다. Google Fonts 공식 저장소의 ofl/gaegu 원본이며 SIL Open Font License 1.1입니다. 라이선스 원문: vendor/Gaegu-OFL.txt. https://github.com/google/fonts/tree/main/ofl/gaegu
