@@ -1,0 +1,57 @@
+/* Registration status stays visible after the file input is recreated. */
+.slot-upload{position:relative;display:flex;align-items:center;justify-content:center;min-height:52px}
+.slot-upload input{position:absolute;inset:0;opacity:0;width:100%;height:100%;max-width:none;margin:0;padding:0;cursor:pointer}
+.slot-upload:focus-within{outline:3px solid var(--green);outline-offset:3px}
+.photo-upload-state{padding:10px 12px;border:1px solid #b9cfb0;border-radius:7px;background:#edf4e8;color:#315a36;line-height:1.7}
+.activity-goal{display:inline-block;padding:7px 11px;border-radius:7px;background:#e8eee0;color:#35573c;font-weight:600}
+.mobile-reading-note{display:none}
+@media(max-width:600px){
+ :root{--muted:#4f625e}
+ body{font-size:16px;line-height:1.75}
+ input,textarea,select,button{font-size:16px;min-height:44px}
+ textarea{line-height:1.8}
+ .titlebar{display:flex;flex-direction:column;align-items:stretch;gap:12px;padding:20px 16px 14px;padding-top:max(20px,env(safe-area-inset-top))}
+ .title-block{display:contents}
+ .title-block>.eyebrow{order:0;max-width:none;font-size:10px;letter-spacing:1.8px;margin:0;line-height:1.5}
+ .title-block>.trip-title{order:1;white-space:normal;font-size:clamp(24px,6.6vw,28px)!important;line-height:1.4;letter-spacing:-1px;margin:0}
+ .titlebar>.top-actions{order:2;display:flex;width:100%;max-width:none;gap:6px;flex-wrap:nowrap;justify-content:stretch}
+ .titlebar .top-actions>button{flex:1;min-width:0;font-size:14px!important;line-height:1.4;min-height:44px;padding:8px 4px;white-space:nowrap;letter-spacing:-.3px}
+ .titlebar .top-actions>button:first-of-type{flex:.8}.titlebar .top-actions>button:last-of-type{flex:1.35}
+ .titlebar #save-state{display:none}
+ .home-screen{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
+ .home-screen .titlebar{flex:none;padding-bottom:14px}
+ .home-screen main{display:flex;flex:1 0 auto;width:100%;max-width:760px;min-height:0;margin:0 auto;padding:12px 16px 20px;padding-bottom:max(20px,env(safe-area-inset-bottom))}
+ .welcome{display:flex;flex:1;flex-direction:column;gap:20px;min-width:0}
+ .welcome-intro{order:0;flex:none;font-size:16px;line-height:1.8;margin:0;color:var(--muted)}
+ .welcome>.hero-art{order:1;flex:1 0 216px;aspect-ratio:auto;min-height:clamp(216px,calc((100vw - 32px)*.658),250px);max-height:none;width:100%;margin:0;border-radius:65px 65px 14px 14px}.welcome .yeosu-postcard{object-fit:contain;object-position:center}
+ .welcome .start-trip{order:2;flex:none;width:100%;min-height:52px;margin:0;padding:13px 18px;font-size:17px;line-height:1.5}
+ #steps button{min-height:52px;font-size:16px;line-height:1.5}.page-heading p,.help,.group-chooser>p,.group-option small{font-size:16px;line-height:1.8}
+ .group-option{min-height:76px}.group-option strong{font-size:17px}
+ .question-tile>p{font-size:16px;line-height:1.8}.question-tile>strong{font-size:20px}.tile-state,.tile-open{font-size:14px;line-height:1.6}
+ .question-detail .big-question{font-size:19px;line-height:1.8}.question-detail label,.photo-task-body label{font-size:16px}
+ .career-content p,.career-content strong,.career-content .help,.photo-task-body p,.photo-task-body .pill{font-size:16px;line-height:1.8}
+ .photo-task summary{min-height:64px}.photo-task summary strong{font-size:17px}.photo-task summary small{font-size:14px}
+ .activity-tabs button{min-height:48px;font-size:16px;line-height:1.5}.activity-tabs button>span{font-size:14px}
+ .photo-upload-state,.photo-format,.activity-goal{font-size:16px;line-height:1.8}.checkline{font-size:16px;line-height:1.8}
+ .report-actions{width:100%;flex-wrap:wrap}.report-actions button,.bottom-nav button{font-size:16px;min-height:48px;white-space:normal}
+ .report-mode-tabs button{font-size:16px;line-height:1.6;min-height:52px;padding:10px 7px}
+ .info-button{width:44px;height:44px;min-height:44px!important;font-size:19px}.board-toolbar button,.selected-note-tools>button{font-size:16px;min-height:44px}
+ .mobile-reading-note{display:block;font-size:16px;line-height:1.8;color:var(--muted);margin:14px 0}
+ .formal-paper{padding:24px 14px;margin:18px auto}.formal-paper>h1{font-size:25px}.formal-paper h2{font-size:20px;line-height:1.7}.formal-paper h3{font-size:18px}
+ .formal-paper table,.formal-appendix>p{font-size:16px;line-height:1.8}.formal-paper th,.formal-paper td{padding:12px;overflow-wrap:anywhere}
+ .formal-info th{width:36%}
+ .formal-field-table thead,.formal-photo-table thead{display:none}
+ .formal-field-table tbody,.formal-field-table tr,.formal-field-table th,.formal-field-table td,.formal-photo-table tbody,.formal-photo-table tr,.formal-photo-table td{display:block;width:100%;box-sizing:border-box}
+ .formal-field-table tr,.formal-photo-table tr{margin-bottom:16px}.formal-field-table th{font-weight:600;background:#f2f5ee}.formal-field-table td{border-top:0;min-height:72px}
+ .formal-photo-table td+td{border-top:0}.formal-photo-table td strong{font-size:16px}.formal-photo-table img{max-height:none;width:100%;height:auto;object-fit:contain}.formal-photo-table p{font-size:16px;line-height:1.8}
+ .help-list,#formal-help p,#install-guide p,#install-guide li{font-size:16px;line-height:1.8}
+}
+@media print{.mobile-reading-note{display:none}}
+
+/* New decorative stickers are shapes, separate from answer notes. Legacy labels remain compatible. */
+.shape-sticker{padding:0;border:0;border-radius:0;box-shadow:none;touch-action:none;cursor:grab}
+.shape-sticker:before{display:none}
+.shape-sticker .sticker-content{width:100%;height:100%;padding:6px}
+.shape-sticker .sticker-content svg{width:100%;height:100%}
+.shape-sticker .card-drag{display:none}
+.sticker-palette svg{width:42px;height:42px;flex:none}
