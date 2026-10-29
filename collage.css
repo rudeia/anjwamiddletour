@@ -47,3 +47,7 @@ input[type=date]::-webkit-datetime-edit{min-width:0;padding:0;max-width:100%}
  .festival-progress{margin-bottom:20px;gap:10px;align-items:center}.festival-progress>span{font-size:16px;line-height:1.5;white-space:nowrap}.festival-progress progress{height:8px;min-width:100px}
  .expectations-page{padding:22px 18px}.expectations-page .question{margin-bottom:24px}.expectations-page label{font-size:16px;line-height:1.8}.expectations-page textarea{font-size:16px;line-height:1.8;min-height:150px}
 }
+
+.festival-report .reflection-final{white-space:pre-wrap;overflow-wrap:anywhere;font-size:16px;line-height:1.8}
+
+#board-fit-status:empty{display:none}
