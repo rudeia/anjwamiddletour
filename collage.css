@@ -82,3 +82,23 @@ input[type=date]::-webkit-datetime-edit{min-width:0;padding:0;max-width:100%}
 @media(max-width:600px){.board-controls{padding:18px 14px}.board-controls .board-toolbar>button{flex:1 1 90px;font-size:16px;padding:10px 8px}.board-view-tools span{font-size:15px}.board-inspector{position:sticky;bottom:4px;padding:10px;border-radius:6px;max-height:43dvh}.board-object-picker{gap:8px}.board-object-picker label{font-size:14px}.selected-object-heading strong{font-size:15px}.object-actions{gap:5px}.object-actions>button{font-size:15px;min-width:54px;min-height:44px;padding:8px 4px}.selected-note-tools label{flex-wrap:wrap}.selected-note-tools input[type=range]{width:140px}.board-inspector .object-action-hint{font-size:14px}}
 @media print{.board-inspector,.board-view-tools,.card-move,.card-resize,.card-rotate{display:none!important}.exhibition-board .board-note.selected{outline:0}}
 @media(max-width:600px){.board-controls .board-toolbar{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}.board-controls .board-toolbar>button{word-break:keep-all;overflow-wrap:normal;line-height:1.55;font-size:15px;padding:8px 5px;min-height:56px}}
+
+/* Card menus live in a viewport dialog, outside the clipped A3 canvas. */
+.exhibition-board .card-menu{position:absolute;right:4px;top:4px;z-index:9;display:grid;place-items:center;min-width:0;min-height:0;width:var(--handle-size,44px);height:var(--handle-size,44px);padding:0;border:1px solid #6d7b6255;border-radius:50%;background:#fffdf4ed;color:#294d37;font:700 calc(var(--handle-size,44px)*.65)/1 sans-serif;touch-action:manipulation;box-shadow:0 2px 4px #243b2920}
+.exhibition-board .card-menu:focus-visible{outline:3px solid #315d42;outline-offset:2px}
+.exhibition-board .board-note:not(.sticker-note) .note-label{padding-right:min(35%,var(--handle-size,44px))}
+.exhibition-board.board-output .note-label{padding-right:0!important}
+.open-paper-settings{min-height:46px;font-size:16px;margin-top:8px;width:100%}
+#note-menu{box-sizing:border-box;width:min(440px,calc(100vw - 32px));max-width:calc(100vw - 32px);max-height:calc(100dvh - 32px);padding:22px;overflow:auto;overscroll-behavior:contain;border:1px solid #a9b69c;border-radius:12px;background:#fffdf5;color:#293e35}
+#note-menu::backdrop{background:#1d312a70}
+#note-menu .dialog-head{display:flex;align-items:flex-start;gap:12px;justify-content:space-between;margin-bottom:18px}
+#note-menu-title{font:700 21px/1.5 sans-serif;min-width:0;margin:0;overflow-wrap:anywhere;word-break:keep-all}
+#note-menu [data-action=close-note-menu]{flex:none;min-width:44px;width:44px;height:44px;min-height:44px;padding:0;font-size:20px}
+.note-menu-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.note-menu-grid button{min-width:0;min-height:60px;padding:12px 8px;font-size:17px;line-height:1.5;display:flex;gap:10px;align-items:center;justify-content:center;word-break:keep-all}
+.note-menu-grid button>span{font-size:24px;line-height:1}.note-menu-grid [data-action=delete-selected-note]{color:#8a3e2e;border-color:#d7a48c}
+#note-menu .help{font-size:15px;line-height:1.8;margin:16px 0}.paper-menu-details>summary{font-size:16px;line-height:1.7;min-height:44px;padding:8px 0;cursor:pointer}
+#note-menu .selected-note-tools{padding:12px 0 0;margin:0}#note-menu .selected-note-tools label{flex-wrap:wrap;width:100%;font-size:16px}#note-menu .selected-note-tools input[type=range]{flex:1;min-width:90px;max-width:220px;width:auto}
+@media(max-width:360px){#note-menu{padding:16px}.note-menu-grid button{font-size:16px;gap:6px}}
+@media print{.card-menu,#note-menu{display:none!important}.exhibition-board .note-label{padding-right:0!important}}
+.exhibition-board.mode-move .selected .card-menu,.exhibition-board.mode-resize .selected .card-menu,.exhibition-board.mode-rotate .selected .card-menu{visibility:hidden}
