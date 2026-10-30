@@ -102,3 +102,6 @@ input[type=date]::-webkit-datetime-edit{min-width:0;padding:0;max-width:100%}
 @media(max-width:360px){#note-menu{padding:16px}.note-menu-grid button{font-size:16px;gap:6px}}
 @media print{.card-menu,#note-menu{display:none!important}.exhibition-board .note-label{padding-right:0!important}}
 .exhibition-board.mode-move .selected .card-menu,.exhibition-board.mode-resize .selected .card-menu,.exhibition-board.mode-rotate .selected .card-menu{visibility:hidden}
+/* Direct selection: no object list; only the chosen paper shows settings. */
+.exhibition-board .board-note:not(.selected) .card-menu{display:none}
+.exhibition-board .board-note:not(.selected) .note-label{padding-right:0}
